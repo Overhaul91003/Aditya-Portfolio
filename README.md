@@ -48,8 +48,7 @@ Make sure you have the following installed on your system before running the pro
   http://localhost:5173
 
 
-📬 Contact
-Feel free to reach out if you have any questions or feedback!
+## 📬 Contact
 
 🔗 Portfolio: your-portfolio-link
 
