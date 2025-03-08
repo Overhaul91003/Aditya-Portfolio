@@ -37,9 +37,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.REACT_APP_EMAILJS_USERID,
-        process.env.REACT_APP_EMAILJS_TEMPLATEID,
-        process.env.REACT_APP_EMAILJS_RECEIVERID,
+        import.meta.env.VITE_EMAILJS_SERVICEID,
+        import.meta.env.VITE_EMAILJS_TEMPLATEID,
         {
           from_name: form.name,
           to_name: "Aditya Bhattacharyya",
@@ -47,7 +46,7 @@ const Contact = () => {
           to_email: "adibhatt09102003@gmail.com",
           message: form.message,
         },
-        'PWWxtPbKkrY9NzRzL'
+        import.meta.env.VITE_EMAILJS_RECEIVERID,
       )
       .then(
         () => {
