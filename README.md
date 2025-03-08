@@ -34,7 +34,7 @@ Make sure you have the following installed on your system before running the pro
    ```sh
    git clone https://github.com/yourusername/your-repo.git
    cd your-repo
-Install Dependencies
+
 
 2. **Install Dependencies**
   npm install
