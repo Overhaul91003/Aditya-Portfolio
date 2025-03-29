@@ -29,6 +29,8 @@ import {
   BARC_LOGO,
   WebRTC,
   Livekit,
+  SummarAIze,
+  HustleBot,
 } from "../assets";
 
 export const navLinks = [
@@ -172,46 +174,74 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "SummarAIze",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A web-based platform that leverages Rapid API's article Summarizer and Extractor API to generate concise summaries of lengthy articles, providing users with a quick and efficient way to process information.",
     tags: [
       {
-        name: "react",
+        name: "html",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "Javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "react",
+        color: "gold-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
+        name: "redux",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "Rapid API",
+        color: "cyan-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: SummarAIze,
+    source_code_link: "https://github.com/Overhaul91003/SummarAIze",
+  },
+  {
+    name: "HustleBot-GPT",
+    description:
+      "A web-based AI chatbot that leverages Retrieval-Augmented Generation (RAG) and OpenAI’s GPT model to provide real-time insights on startups, funding trends, and market shifts, ensuring users stay updated with expert-backed analysis and the latest industry developments.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "teal-text-gradient",
+      },
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "LangChain.js",
+        color: "magenta-text-gradient",
+      },
+      {
+        name: "OpenAI-API",
+        color: "silver-text-gradient",
+      },
+      {
+        name: "DataStax",
+        color: "bronze-text-gradient",
+      },
+    ],
+    image: HustleBot,
+    source_code_link: "https://github.com/Overhaul91003/HustleBot-GPT",
   },
   {
     name: "Trip Guide",
