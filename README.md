@@ -20,33 +20,6 @@ This project is built using the following technologies:
 
 ---
 
-## 📌 Installation & Setup  
-
-### **Prerequisites**  
-Make sure you have the following installed on your system before running the project:  
-- [Git](https://git-scm.com/)  
-- [Node.js](https://nodejs.org/)  
-- [npm](https://www.npmjs.com/)  
-
-### **Steps to Run the Project**  
-
-1. **Clone the Repository**  
-   ```sh
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
-
-
-2. **Install Dependencies**
-  npm install
-  Run the Development Server
-
-3. **Run the Development Server**
-  npm run dev
-
-4. **Open in Browser**
-  Once the server starts, open your browser and go to:
-  http://localhost:5173
-
 
 ### 📬 Contact
 Portfolio: http://aditya-portfolio-test.vercel.app
