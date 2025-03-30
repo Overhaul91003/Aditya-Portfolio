@@ -5,6 +5,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import FullStackDeveloper from "./FullStackDeveloper.png";
 import ComputerVision from "./ComputerVision.png";
+import genai from "./genai.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -37,6 +38,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import SummarAIze from "./SummarAIze.png";
 import HustleBot from "./HustleBot.png";
+import prompttoimage from "./prompttoimage.png";
 
 export {
   logo,
@@ -46,6 +48,7 @@ export {
   web,
   FullStackDeveloper,
   ComputerVision,
+  genai,
   github,
   menu,
   close,
@@ -75,4 +78,5 @@ export {
   tripguide,
   SummarAIze,
   HustleBot,
+  prompttoimage,
 };

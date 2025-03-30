@@ -25,12 +25,14 @@ import {
   threejs,
   FullStackDeveloper,
   ComputerVision,
+  genai,
   RBI_Logo,
   BARC_LOGO,
   WebRTC,
   Livekit,
   SummarAIze,
   HustleBot,
+  prompttoimage,
 } from "../assets";
 
 export const navLinks = [
@@ -56,6 +58,10 @@ const services = [
   {
     title: "Full Stack Development",
     icon: FullStackDeveloper,
+  },
+  {
+    title: "GenAI",
+    icon: genai,
   },
   {
     title: "Computer Vision",
@@ -176,8 +182,9 @@ const projects = [
   {
     name: "SummarAIze",
     description:
-      "A web-based platform that leverages Rapid API's article Summarizer and Extractor API to generate concise summaries of lengthy articles, providing users with a quick and efficient way to process information.",
+      "A web-based platform that leverages Rapid-API's article Summarizer and Extractor API to generate concise summaries of lengthy articles, providing users with a quick and efficient way to process information.",
     tags: [
+      /*
       {
         name: "html",
         color: "orange-text-gradient",
@@ -189,6 +196,11 @@ const projects = [
       {
         name: "Javascript",
         color: "yellow-text-gradient",
+      },
+      */
+      {
+        name: "Node.js",
+        color: "neon-green-text-gradient",
       },
       {
         name: "react",
@@ -223,10 +235,12 @@ const projects = [
         name: "Typescript",
         color: "teal-text-gradient",
       },
+      /*
       {
         name: "css",
         color: "blue-text-gradient",
       },
+      */
       {
         name: "LangChain.js",
         color: "magenta-text-gradient",
@@ -244,25 +258,55 @@ const projects = [
     source_code_link: "https://github.com/Overhaul91003/HustleBot-GPT",
   },
   {
-    name: "Trip Guide",
+    name: "Prompt2Image",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Prompt2Image is a web-based platform where users can enter their desired prompts, generate AI-created images, and, if they like the result, share it with the community on the home page.",
     tags: [
+      /*
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "hmtl",
+        color: "orange-text-gradient",
       },
       {
         name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "yellow-text-gradient",
+      },
+      */
+      {
+        name: "React",
+        color: "gold-text-gradient",
+      },
+      {
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "Node.js",
+        color: "neon-green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "fire-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "bronze-text-gradient",
+      },
+      {
+        name: "Cloudinary",
+        color: "sunset-text-gradient",
+      },
+      {
+        name: "OpenAI-Dall.E",
+        color: "silver-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: prompttoimage,
+    source_code_link: "https://github.com/Overhaul91003/Prompt_2_Image",
   },
 ];
 

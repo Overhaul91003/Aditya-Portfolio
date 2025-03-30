@@ -138,6 +138,27 @@
   -webkit-text-fill-color: transparent;
 }
 
+.neon-green-text-gradient {
+  background: #00ff87; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #00ff87, #60efff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fire-text-gradient {
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ff4e50, #f9d423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sunset-text-gradient {
+  background: #ff7e5f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* New Colors being added */
 
