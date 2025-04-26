@@ -39,6 +39,7 @@ import tripguide from "./tripguide.png";
 import SummarAIze from "./SummarAIze.png";
 import HustleBot from "./HustleBot.png";
 import prompttoimage from "./prompttoimage.png";
+import Confera from "./Confera.png";
 
 export {
   logo,
@@ -79,4 +80,5 @@ export {
   SummarAIze,
   HustleBot,
   prompttoimage,
+  Confera,
 };

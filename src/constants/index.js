@@ -33,6 +33,7 @@ import {
   SummarAIze,
   HustleBot,
   prompttoimage,
+  Confera,
 } from "../assets";
 
 export const navLinks = [
@@ -134,20 +135,22 @@ const experiences = [
       "Developed a Tokenized Digital Asset Management System (TDAMS) using React.js for the frontend and Node.js for the backend, demonstrating the practical application of asset tokenization.",
       "Implemented blockchain solutions, such as Hyperledger Fabric or Ethereum, to securely tokenize and manage financial assets, aligning with the research insights on asset tokenization."
     ],
+    github_link: "https://github.com/your-org/acme-project"
   },
   {
     title: "Project Trainee",
     company_name: "Bhabha Atomic Research Center",
     icon: BARC_LOGO,
     iconBg: "#E6DEDD",
-    date: "Jan 15, 2025 - Present",
+    date: "Jan 15, 2025 - May 15, 2025",
     points: [
-      "Developing a WebRTC-powered video conferencing application for Bhabha Atomic Research Center (BARC) using LiveKit Media Server to enhance scalability and performance over their existing Kurento-based system.",
-      "Implementing the frontend using React with LiveKit components and developing the backend using Node.js, integrating LiveKit SDK for real-time communication.",
-      "Enabling multi-user video & audio conferencing, chat messaging, and other essential video conferencing functionalities using LiveKit’s SFU architecture for efficient media streaming.",
-      "Integrating MediaPipe AI for real-time background blur and implementing LiveKit Egress API for room recording, enhancing user experience and usability.",
-      "Working on a functional prototype to demonstrate LiveKit’s capabilities, providing documentation and insights for potential integration into BARC’s infrastructure."
+      "Implemented LiveKit Media Server on existing BARC infrastructure, replacing legacy systems, thus improving audio-only concurrent capacity by 1400% and 720p video group call capacity by 13%.",
+      "Developed the React frontend using LiveKit components and custom hooks, featuring a seamless pre-join flow (username, mic/video toggles), dynamic SFU-driven grid layouts, real-time participant management, multi-user audio/video, and a persistent per-room chat panel via localStorage with cross-tab synchronization.",
+      "Built a Node.js/Express backend integrating the LiveKit Server SDK to manage room lifecycle (create, list, delete), generate secure AccessTokens, and expose CORS-enabled REST endpoints for token issuance and room control.",
+      "Integrated MediaPipe Selfie Segmentation via LiveKit track-processors for real-time background blur and virtual backgrounds at 30 fps, and leveraged LiveKit’s Egress API—deployed in Docker with Redis—to record composite MP4 exports on demand through intuitive Record/Stop controls in the UI.",
+      "Implemented a client-side meeting history module to log join and leave times (with durations) alongside a “Recent Meetings” dashboard with Clear All/Delete controls; automated local development with Docker (Redis & Egress), a Windows-hosted LiveKit server, and npm scripts for backend (port 3000) and frontend (port 3001); hosted locally on my laptop and not an exact replica of BARC’s deployed solution due to security constraints."
     ],
+    github_link: "https://github.com/Overhaul91003/Confera"
   }
 ];
 
@@ -307,6 +310,78 @@ const projects = [
     ],
     image: prompttoimage,
     source_code_link: "https://github.com/Overhaul91003/Prompt_2_Image",
+  },
+  {
+    name: "Confera",
+    description:
+      "Confera is a A Web Based Video Conferencing Application using Livekit Media Server and Livekit Egress Service .",
+    tags: [
+      /*
+      {
+        name: "hmtl",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "yellow-text-gradient",
+      },
+      */
+      {
+        name: "React",
+        color: "gold-text-gradient",
+      },
+      /*
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      */
+      {
+        name: "Node.js",
+        color: "neon-green-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "fire-text-gradient",
+      },
+      /*
+      {
+        name: "MongoDB",
+        color: "bronze-text-gradient",
+      },
+      {
+        name: "Cloudinary",
+        color: "sunset-text-gradient",
+      },
+      {
+        name: "OpenAI-Dall.E",
+        color: "silver-text-gradient",
+      },
+      */
+      {
+        name: "Docker",
+        color: "white-gradient",
+      },
+      {
+        name: "Redis",
+        color: "teal-text-gradient",
+      },
+      {
+        name: "MediaPipe",
+        color: "bronze-text-gradient",
+      },
+      {
+        name: "Livekit",
+        color: "purple-text-gradient",
+      },
+      
+    ],
+    image: Confera,
+    source_code_link: "https://github.com/Overhaul91003/Confera",
   },
 ];
 

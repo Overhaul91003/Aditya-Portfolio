@@ -11,6 +11,8 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { github } from "../assets";
+
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -41,6 +43,20 @@ const ExperienceCard = ({ experience }) => {
           {experience.company_name}
         </p>
       </div>
+
+      {experience.github_link && (
+        <div
+          onClick={() => window.open(experience.github_link, "_blank")}
+          className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-white/10"
+          title="View on GitHub"
+        >
+          <img
+            src={github}
+            alt="github link"
+            className="w-5 h-5 object-contain"
+          />
+        </div>
+      )}
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
         {experience.points.map((point, index) => (
