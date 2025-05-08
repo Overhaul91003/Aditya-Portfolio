@@ -148,9 +148,9 @@ const experiences = [
       "Developed the React frontend using LiveKit components and custom hooks, featuring a seamless pre-join flow (username, mic/video toggles), dynamic SFU-driven grid layouts, real-time participant management, multi-user audio/video, and a persistent per-room chat panel via localStorage with cross-tab synchronization.",
       "Built a Node.js/Express backend integrating the LiveKit Server SDK to manage room lifecycle (create, list, delete), generate secure AccessTokens, and expose CORS-enabled REST endpoints for token issuance and room control.",
       "Integrated MediaPipe Selfie Segmentation via LiveKit track-processors for real-time background blur and virtual backgrounds at 30 fps, and leveraged LiveKit’s Egress API—deployed in Docker with Redis—to record composite MP4 exports on demand through intuitive Record/Stop controls in the UI.",
-      "Implemented a client-side meeting history module to log join and leave times (with durations) alongside a “Recent Meetings” dashboard with Clear All/Delete controls; automated local development with Docker (Redis & Egress), a Windows-hosted LiveKit server, and npm scripts for backend (port 3000) and frontend (port 3001); hosted locally on my laptop and not an exact replica of BARC’s deployed solution due to security constraints."
+      "Implemented a client-side meeting history module to log join and leave times (with durations) alongside a “Recent Meetings” dashboard with Clear All/Delete controls; automated local development with Docker (Redis & Egress), a Windows-hosted LiveKit server, and npm scripts for backend (port 3000) and frontend (port 3001)"
     ],
-    github_link: "https://github.com/Overhaul91003/Confera"
+    github_link: ""
   }
 ];
 
