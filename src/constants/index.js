@@ -34,6 +34,7 @@ import {
   HustleBot,
   prompttoimage,
   Confera,
+  Redis,
 } from "../assets";
 
 export const navLinks = [
@@ -119,6 +120,14 @@ const technologies = [
     name: "Livekit",
     icon: Livekit,
   },
+  {
+    name: "Redis",
+    icon: Redis,
+  },
+  {
+    name: "Docker",
+    icon: docker,
+  }
 ];
 
 const experiences = [
@@ -132,10 +141,12 @@ const experiences = [
       "Conducted comprehensive analysis on the benefits and challenges of tokenizing financial assets, focusing on blockchain technology and its implications for the financial sector.",
       "Compiled findings into a detailed report, offering strategic recommendations for financial institutions, regulators, investors, and technology providers.",
       "Assisted RBI in policy formulation by presenting research outcomes to senior leadership, contributing to informed decision-making.",
+      /*
       "Developed a Tokenized Digital Asset Management System (TDAMS) using React.js for the frontend and Node.js for the backend, demonstrating the practical application of asset tokenization.",
       "Implemented blockchain solutions, such as Hyperledger Fabric or Ethereum, to securely tokenize and manage financial assets, aligning with the research insights on asset tokenization."
-    ],
-    github_link: "https://github.com/your-org/acme-project"
+      */
+      ],
+    github_link: ""
   },
   {
     title: "Project Trainee",
@@ -144,7 +155,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Jan 15, 2025 - May 15, 2025",
     points: [
-      "Implemented LiveKit Media Server on existing BARC infrastructure, replacing legacy systems, thus improving audio-only concurrent capacity by 1400% and 720p video group call capacity by 13%.",
+      "Migrated BARC’s legacy Kurento deployment to LiveKit—scaling audio-only rooms to support 3,000 subscribers (with 10 active publishers) at ~80% CPU, and enabling 150-participant 720p group calls at ~85% CPU on a 16-core instance—representing a significant uplift in media capacity.",
       "Developed the React frontend using LiveKit components and custom hooks, featuring a seamless pre-join flow (username, mic/video toggles), dynamic SFU-driven grid layouts, real-time participant management, multi-user audio/video, and a persistent per-room chat panel via localStorage with cross-tab synchronization.",
       "Built a Node.js/Express backend integrating the LiveKit Server SDK to manage room lifecycle (create, list, delete), generate secure AccessTokens, and expose CORS-enabled REST endpoints for token issuance and room control.",
       "Integrated MediaPipe Selfie Segmentation via LiveKit track-processors for real-time background blur and virtual backgrounds at 30 fps, and leveraged LiveKit’s Egress API—deployed in Docker with Redis—to record composite MP4 exports on demand through intuitive Record/Stop controls in the UI.",
