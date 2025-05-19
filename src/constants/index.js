@@ -156,7 +156,7 @@ const experiences = [
     company_name: "Bhabha Atomic Research Center",
     icon: BARC_LOGO,
     iconBg: "#E6DEDD",
-    date: "Jan 15, 2025 - May 15, 2025",
+    date: "Jan 15, 2025 - May 8, 2025",
     points: [
       "Migrated BARC’s legacy Kurento deployment to LiveKit—scaling audio-only rooms to support 3,000 subscribers (with 10 active publishers) at ~80% CPU, and enabling 150-participant 720p group calls at ~85% CPU on a 16-core instance—representing a significant uplift in media capacity.",
       "Developed the React frontend using LiveKit components and custom hooks, featuring a seamless pre-join flow (username, mic/video toggles), dynamic SFU-driven grid layouts, real-time participant management, multi-user audio/video, and a persistent per-room chat panel via localStorage with cross-tab synchronization.",

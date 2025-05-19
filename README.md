@@ -21,9 +21,6 @@ This project is built using the following technologies:
 ---
 
 
-### 📬 Contact
-Portfolio: http://aditya-portfolio-test.vercel.app
-
 
 
 
