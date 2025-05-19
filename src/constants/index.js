@@ -35,6 +35,8 @@ import {
   prompttoimage,
   Confera,
   Redis,
+  rbi_cert,
+  barc_cert,
 } from "../assets";
 
 export const navLinks = [
@@ -146,7 +148,8 @@ const experiences = [
       "Implemented blockchain solutions, such as Hyperledger Fabric or Ethereum, to securely tokenize and manage financial assets, aligning with the research insights on asset tokenization."
       */
       ],
-    github_link: ""
+      certificate: rbi_cert,
+      github_link: "a",
   },
   {
     title: "Project Trainee",
@@ -161,7 +164,8 @@ const experiences = [
       "Integrated MediaPipe Selfie Segmentation via LiveKit track-processors for real-time background blur and virtual backgrounds at 30 fps, and leveraged LiveKit’s Egress API—deployed in Docker with Redis—to record composite MP4 exports on demand through intuitive Record/Stop controls in the UI.",
       "Implemented a client-side meeting history module to log join and leave times (with durations) alongside a “Recent Meetings” dashboard with Clear All/Delete controls; automated local development with Docker (Redis & Egress), a Windows-hosted LiveKit server, and npm scripts for backend (port 3000) and frontend (port 3001)"
     ],
-    github_link: ""
+    certificate: barc_cert,
+    github_link: "a",
   }
 ];
 

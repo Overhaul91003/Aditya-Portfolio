@@ -7,6 +7,7 @@ import FullStackDeveloper from "./FullStackDeveloper.png";
 import ComputerVision from "./ComputerVision.png";
 import genai from "./genai.png";
 import github from "./github.png";
+import certificate from "./certificate.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -34,6 +35,9 @@ import tesla from "./company/tesla.png";
 import RBI_Logo from "./company/RBI_Logo.png";
 import BARC_LOGO from "./company/BARC_LOGO.png";
 
+import barc_cert from "./certificates/barc_cert.png";
+import rbi_cert from "./certificates/rbi_cert.png";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -52,6 +56,7 @@ export {
   ComputerVision,
   genai,
   github,
+  certificate,
   menu,
   close,
   css,
@@ -76,6 +81,8 @@ export {
   tesla,
   RBI_Logo,
   BARC_LOGO,
+  barc_cert,
+  rbi_cert,
   carrent,
   jobit,
   tripguide,

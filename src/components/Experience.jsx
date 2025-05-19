@@ -12,6 +12,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { github } from "../assets";
+import { certificate } from "../assets";
 
 
 const ExperienceCard = ({ experience }) => {
@@ -34,6 +35,7 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
+
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
         <p
@@ -44,17 +46,35 @@ const ExperienceCard = ({ experience }) => {
         </p>
       </div>
 
-      {experience.github_link && (
-        <div
-          onClick={() => window.open(experience.github_link, "_blank")}
-          className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-white/10"
-          title="View on GitHub"
-        >
-          <img
-            src={github}
-            alt="github link"
-            className="w-5 h-5 object-contain"
-          />
+      {(experience.github_link || experience.certificate) && (
+        <div className="flex items-center mt-2">
+          {experience.github_link && (
+            <div
+              onClick={() => window.open(experience.github_link, "_blank")}
+              className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-white/10"
+              title="View on GitHub"
+            >
+              <img
+                src={github}
+                alt="github link"
+                className="w-5 h-5 object-contain"
+              />
+            </div>
+          )}
+
+          {experience.certificate && (
+            <div
+              onClick={() => window.open(experience.certificate, "_blank")}
+              className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-white/10"
+              title="View Completion Certificate"
+            >
+              <img
+                src={certificate}
+                alt="Certificate link"
+                className="w-5 h-5 object-contain"
+              />
+            </div>
+          )}
         </div>
       )}
 
