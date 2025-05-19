@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -14,8 +14,7 @@ import { textVariant } from "../utils/motion";
 import { github } from "../assets";
 import { certificate } from "../assets";
 
-
-const ExperienceCard = ({ experience }) => {
+const ExperienceCard = ({ experience, onCertClick }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -35,19 +34,15 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
+        <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>
           {experience.company_name}
         </p>
       </div>
 
       {(experience.github_link || experience.certificate) && (
-        <div className="flex items-center mt-2">
+        <div className="flex items-center gap-4 mt-2">
           {experience.github_link && (
             <div
               onClick={() => window.open(experience.github_link, "_blank")}
@@ -56,7 +51,7 @@ const ExperienceCard = ({ experience }) => {
             >
               <img
                 src={github}
-                alt="github link"
+                alt="GitHub link"
                 className="w-5 h-5 object-contain"
               />
             </div>
@@ -64,13 +59,13 @@ const ExperienceCard = ({ experience }) => {
 
           {experience.certificate && (
             <div
-              onClick={() => window.open(experience.certificate, "_blank")}
+              onClick={() => onCertClick(experience.certificate)}
               className="w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-white/10"
               title="View Completion Certificate"
             >
               <img
                 src={certificate}
-                alt="Certificate link"
+                alt="Certificate"
                 className="w-5 h-5 object-contain"
               />
             </div>
@@ -93,6 +88,32 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCert, setSelectedCert] = useState(null);
+
+  const openModal = (certImage) => {
+    setSelectedCert(certImage);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedCert(null);
+  };
+
+  // Disable background scroll when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -110,12 +131,43 @@ const Experience = () => {
             <ExperienceCard
               key={`experience-${index}`}
               experience={experience}
+              onCertClick={openModal}
             />
           ))}
         </VerticalTimeline>
       </div>
+
+      {/* Modal for certificate preview */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex justify-center items-start pt-24 bg-black bg-opacity-70"
+          onClick={closeModal}
+        >
+          <div
+            className="bg-white rounded-lg p-4 max-w-2xl max-h-[80vh] overflow-auto relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeModal}
+              className="absolute top-2 right-3 text-black text-3xl font-bold hover:text-red-600"
+              style={{ fontSize: "32px" }}
+            >
+              ×
+            </button>
+            <img
+              src={selectedCert}
+              alt="Certificate"
+              className="w-full h-auto object-contain rounded-md select-none"
+              onContextMenu={(e) => e.preventDefault()}
+              draggable={false}
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 };
 
 export default SectionWrapper(Experience, "work");
+
+

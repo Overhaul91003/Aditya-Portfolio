@@ -149,7 +149,7 @@ const experiences = [
       */
       ],
       certificate: rbi_cert,
-      github_link: "a",
+      github_link: "",
   },
   {
     title: "Project Trainee",
@@ -165,7 +165,7 @@ const experiences = [
       "Implemented a client-side meeting history module to log join and leave times (with durations) alongside a “Recent Meetings” dashboard with Clear All/Delete controls; automated local development with Docker (Redis & Egress), a Windows-hosted LiveKit server, and npm scripts for backend (port 3000) and frontend (port 3001)"
     ],
     certificate: barc_cert,
-    github_link: "a",
+    github_link: "",
   }
 ];
 
