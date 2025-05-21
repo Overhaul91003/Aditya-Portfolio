@@ -37,6 +37,7 @@ import {
   Redis,
   rbi_cert,
   barc_cert,
+  skillify,
 } from "../assets";
 
 export const navLinks = [
@@ -397,6 +398,48 @@ const projects = [
     ],
     image: Confera,
     source_code_link: "https://github.com/Overhaul91003/Confera",
+  },
+  {
+    name: "Skillify",
+    description:
+      "Skillify is a modern AI-powered platform designed to help students prepare for job interviews with confidence.",
+    tags: [
+      
+      {
+        name: "Next.js",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "teal-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Vapi AI",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Shadcn/ui",
+        color: "white-text-gradient",
+      },
+      {
+        name: "Google Gemini",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Zod",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: skillify,
+    source_code_link: "https://github.com/Overhaul91003/Skillify",
   },
 ];
 

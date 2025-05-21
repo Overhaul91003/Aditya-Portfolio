@@ -45,6 +45,7 @@ import SummarAIze from "./SummarAIze.png";
 import HustleBot from "./HustleBot.png";
 import prompttoimage from "./prompttoimage.png";
 import Confera from "./Confera.png";
+import skillify from "./skillify.png";
 
 export {
   logo,
@@ -90,4 +91,5 @@ export {
   HustleBot,
   prompttoimage,
   Confera,
+  skillify,
 };
