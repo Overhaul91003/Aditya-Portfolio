@@ -27,6 +27,7 @@ import threejs from "./tech/threejs.svg";
 import WebRTC from "./tech/WebRTC.png";
 import Livekit from "./tech/Livekit.png";
 import Redis from "./tech/Redis.png";
+import nextjs from "./tech/nextjs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -75,6 +76,7 @@ export {
   WebRTC,
   Livekit,
   Redis,
+  nextjs,
   docker,
   meta,
   shopify,

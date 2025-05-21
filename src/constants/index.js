@@ -38,6 +38,7 @@ import {
   rbi_cert,
   barc_cert,
   skillify,
+  nextjs,
 } from "../assets";
 
 export const navLinks = [
@@ -94,6 +95,10 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "Next.js",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
